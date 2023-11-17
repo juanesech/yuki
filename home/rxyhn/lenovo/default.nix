@@ -15,6 +15,5 @@
     # Specific configuration
     ./desktop
     ./services
-    ./X
   ];
 }
