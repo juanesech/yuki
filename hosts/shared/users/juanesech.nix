@@ -7,8 +7,8 @@
 in {
   users.mutableUsers = false;
   users.users.juanesech = {
-    description = "Rayhan Pratama";
-    initialPassword = "nixos";
+    description = "Juanes Echavarria";
+    initialPassword = "nixOS.";
     isNormalUser = true;
     uid = 1000;
     shell = pkgs.zsh;
@@ -30,7 +30,6 @@ in {
         "libvirtd"
       ];
 
-    openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAIaeDlsQNZuf95V5QNjfV8eZncS3J0kV4EWvOlcavjh juanesech@lenovo"];
     packages = [pkgs.home-manager];
   };
 

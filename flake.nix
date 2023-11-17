@@ -43,18 +43,18 @@
 
     nixosConfigurations = {
       # Laptop
-      lenovo = nixpkgs.lib.nixosSystem {
+      slim = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        modules = [./hosts/lenovo];
+        modules = [./hosts/slim];
       };
     };
 
     homeConfigurations = {
       # Laptop
-      "juanesech@lenovo" = home-manager.lib.homeManagerConfiguration {
+      "juanesech@slim" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages."x86_64-linux";
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./home/juanesech/lenovo];
+        modules = [./home/juanesech/slim];
       };
     };
   };
