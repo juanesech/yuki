@@ -16,7 +16,7 @@
     ../shared
 
     # Select the user configuration
-    ../shared/users/rxyhn.nix
+    ../shared/users/juanesech.nix
 
     # Specific configuration
     ./hardware-configuration.nix
